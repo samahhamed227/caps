@@ -2,7 +2,6 @@
 const events = require('../event/pool');
 
 events.on('pickup',(payload)=>{deliverphase(payload)});
-
 function deliverphase(payload){
 setTimeout(()=>{makingpickup(payload);},3000);
 setTimeout(()=>{makingdelivery(payload);},1000);
