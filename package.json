@@ -1,0 +1,26 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node caps.js",
+    "test":"jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samahhamed227/caps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samahhamed227/caps/issues"
+  },
+  "homepage": "https://github.com/samahhamed227/caps#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "jest": "^27.3.1"
+  }
+}
