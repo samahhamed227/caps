@@ -4,7 +4,7 @@ const caps = require('../caps');
 const driver = require('../module/driver')
 const vendor = require('../module/vendor')
 
-describe('CAPS CONSOLE LOG', () => {
+describe('caps CONSOLE LOG', () => {
     let consoleSpy; 
     let ordercustom;
 
@@ -16,20 +16,20 @@ describe('CAPS CONSOLE LOG', () => {
             ordercustom : 'Bobbie Boehm',
             orderadress : 'Reinholdburgh'
       };
-    })
+    });
     afterEach(()=>{
         consoleSpy.mockRestore();
     });
-    it('verifies the "pickup" emit triggers console in CAPS',()=>{
+    it('verifies the "pickup" emit triggers console in caps',()=>{
         events.emit('pickup',ordercustom);
         expect(consoleSpy).toHaveBeenCalledTimes(1);
-    })
-    it('verifies the "in-transit" emit triggers console in CAPS',()=>{
+    });
+    it('verifies the "in-transit" emit triggers console in caps',()=>{
         events.emit('in-transit',ordercustom);
         expect(consoleSpy).toHaveBeenCalledTimes(1);
-    })
-    it('verifies the "delivered" emit triggers console in CAPS',()=>{
+    });
+    it('verifies the "delivered" emit triggers console in caps',()=>{
         events.emit('delivered',ordercustom);
         expect(consoleSpy).toHaveBeenCalledTimes(0);
-    })
+    });
 })
