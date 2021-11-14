@@ -2,19 +2,17 @@
 ## Author: Samah Hamed
 
 ### GitHub :  https://github.com/samahhamed227/caps  
-### Start
+### Start: 
 ```
 npm start
 ```
-
 # Tests
 To run tests:
-
 `npm test`
 ![](lab11.PNG)
 ### Sample Output
 ```
- event {
+event {
   event: 'pickup',
   date_event: 'Sun Nov 14 2021 17:25:55 GMT+0200 (Eastern European Standard Time)',
   payload: {

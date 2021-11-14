@@ -1,9 +1,9 @@
 'use strict';
-const events = require('./event/pool')
+const events = require('../event/pool')
 
-const caps = require('./caps');
-const driver = require('./module/driver')
-const vendor = require('./module/vendor')
+const caps = require('../caps');
+const driver = require('../module/driver')
+const vendor = require('../module/vendor')
 
 describe('CAPS CONSOLE LOG', () => {
     let consoleSpy; 
@@ -21,7 +21,6 @@ describe('CAPS CONSOLE LOG', () => {
     afterEach(()=>{
         consoleSpy.mockRestore();
     });
-
     it('verifies the "pickup" emit triggers console in CAPS',()=>{
         events.emit('pickup',ordercustom);
         expect(consoleSpy).toHaveBeenCalledTimes(1);
