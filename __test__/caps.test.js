@@ -1,6 +1,5 @@
 'use strict';
 const events = require('../event/pool')
-
 const caps = require('../caps');
 const driver = require('../module/driver')
 const vendor = require('../module/vendor')
@@ -16,7 +15,7 @@ describe('CAPS CONSOLE LOG', () => {
             orderid : '1fc3abfb-be8f-4e8d-9b08-31dd336556c9',
             ordercustom : 'Bobbie Boehm',
             orderadress : 'Reinholdburgh'
-        };
+      };
     })
     afterEach(()=>{
         consoleSpy.mockRestore();
