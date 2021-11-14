@@ -2,8 +2,6 @@
 const events =require('./event/pool');
 require('./module/driver');
 require('./module/vendor');
-
-
 events.on('pickup',(payload)=>{DateEvent('pickup',payload)});
 events.on('in-transit',(payload)=>{DateEvent('in-transit',payload)});
 events.on('delievered',(payload)=>{DateEvent('delivered',payload)});
