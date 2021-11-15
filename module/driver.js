@@ -3,8 +3,8 @@ const events = require('../event/pool');
 
 events.on('pickup',(payload)=>{deliverphase(payload)});
 function deliverphase(payload){
-setTimeout(()=>{makingpickup(payload);},3000);
-setTimeout(()=>{makingdelivery(payload);},1000);
+setTimeout(()=>{makingpickup(payload);},1000);
+setTimeout(()=>{makingdelivery(payload);},3000);
 
 }
 
@@ -15,7 +15,7 @@ function makingpickup(payload){
 }
 function makingdelivery(payload){
     console.log(`Driver : diliveried ${payload.orderid}`);
-    events.emit('in-transit',payload);
+    events.emit('delivered',payload);
 }
 
 
