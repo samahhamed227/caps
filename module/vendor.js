@@ -12,7 +12,7 @@ function createorder(){
     return orders;
 }
 
-function pickup(orders=createorder()){
+function pickup(orders = createorder()){
  events.emit('pickup',orders);
 }
 //change data evry 5 sec
